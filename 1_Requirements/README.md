@@ -1,7 +1,8 @@
 # Requirements
 
-* Capture all the requirements wrt system, module, interface, integration, testing, Functional and Non-functional
-* Captures Basic Planning of the project through - Sample Gantt Chart attached
+* 1st Band: Select a color
+* 2nd Band: Select a color
+* 3rd Band: (Multiplier) Select a color
+* 4th Band: (Tolerance) Select a color
 
-* Tools: MS Excel, MS word or Similar
 
