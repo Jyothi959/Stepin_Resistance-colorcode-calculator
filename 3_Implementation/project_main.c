@@ -77,7 +77,7 @@ long getResistorValue( char colorCode[], int colorValue[], int r_value)
             case('W'):
                 colorValue[i] = 9;
                 break;
-            default: break;
+            default: errormsg();
         }
         sum=(sum*10)+colorValue[i];
     }
@@ -111,7 +111,7 @@ long getResistorValue( char colorCode[], int colorValue[], int r_value)
             case('L'):
                 multiplier = 1000000;
                 break;
-            default: break;
+            default: errormsg();
         }
         r_value=sum*multiplier;
     return r_value;
@@ -153,8 +153,13 @@ float Tolerance(char colorCode[], float tolerance)
             case('S'):
                 tol = 10;
                 break;
-            default: break;
+            default: errormsg();
         }
         tolerance = tol;
         return tolerance;
+}
+char errormsg()
+{
+    printf("Invalid alphabet entered \n\n");
+    while(1);
 }
